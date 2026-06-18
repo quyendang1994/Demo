@@ -1,0 +1,8 @@
+.env
+output/*.jpg
+output/post_log.json
+logs/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
