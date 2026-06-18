@@ -67,7 +67,7 @@ cd Demo
 
 Hoặc tải thư mục `Demo_FC` về máy và mở PowerShell tại đó.
 
-### Bước 2 — Tạo virtual environment (khuyến nghị)
+### Bước 2 — Tạo virtual environment (khuyến nghị,có thể không cần)
 
 ```powershell
 python -m venv venv
@@ -111,8 +111,7 @@ FB_ACCESS_TOKEN=EAAxxxxxxxx...
 FB_API_VERSION=v19.0
 
 # === LỊCH ĐĂNG BÀI ===
-SCHEDULE_TIMES=07:00,12:00,18:00
-
+SCHEDULE_TIMES=07:00
 # === LẤY TIN TỨC ===
 MAX_ITEMS_PER_SOURCE=10
 TOTAL_CARDS_ON_IMAGE=5
@@ -258,7 +257,7 @@ python main.py
 
 Bot sẽ:
 - Chạy liên tục, không tắt
-- Tự động đăng bài theo giờ trong `SCHEDULE_TIMES` (mặc định: 7h, 12h, 18h)
+- Tự động đăng bài theo giờ trong `SCHEDULE_TIMES` (mặc định: 7h)
 - In ra thời gian chờ đến lần đăng tiếp theo
 
 ```
